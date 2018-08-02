@@ -12,7 +12,6 @@ import java.util.UUID;
  */
 public class OOMByMetaSpace {
 
-
     /**
      * intern 会把创建的字符串加入到常量池中
      * 常量池不会被GC回收,所以到一定的程度后自动抛出OOM

@@ -29,3 +29,9 @@
 -XX:PermSize                                // 设置永久大小
 -XX:MaxPermSize                             // 设置永久区最大大小
 ```
+## GC参数
+
+``` java 
+
+-XX:+UseSerialGC                     // 使用串行回收
+```

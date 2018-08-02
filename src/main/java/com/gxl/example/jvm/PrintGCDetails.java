@@ -29,7 +29,7 @@ public class PrintGCDetails {
     public static void main(String[] args) {
         byte[] bytes = null;
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 10; i++) {
             bytes = new byte[1024];
         }
     }
