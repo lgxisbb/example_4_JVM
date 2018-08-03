@@ -1,4 +1,4 @@
-package com.gxl.example.jvm;
+package com.gxl.example.jvm.gcdetails;
 
 /**
  * @Author Lucky Dragon

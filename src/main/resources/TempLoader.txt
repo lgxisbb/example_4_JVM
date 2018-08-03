@@ -1,0 +1,14 @@
+package com.gxl.example.jvm.classload;
+
+/**
+ * @Author Lucky Dragon
+ * @CreateTime 2018/8/3 11:29
+ * @Description
+ */
+public class TempLoader {
+
+    public void print() {
+        ClassLoader classLoader = TempLoader.class.getClassLoader();
+        System.out.println("I'am loader by " + classLoader);
+    }
+}

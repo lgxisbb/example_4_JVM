@@ -1,4 +1,4 @@
-package com.gxl.example.jvm;
+package com.gxl.example.jvm.gcdetails;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +20,8 @@ public class OOMByMetaSpace {
      */
     public static void main(String[] args) {
 
+        ClassLoader contextClassLoader = Thread.currentThread().getContextClassLoader();
+        System.out.println(contextClassLoader);
         List<String> l = new ArrayList();
         while (true) {
             l.add(UUID.randomUUID().toString().intern());
