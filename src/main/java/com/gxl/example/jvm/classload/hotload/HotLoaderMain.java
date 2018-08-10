@@ -1,4 +1,4 @@
-package com.gxl.example.jvm.classload.hot;
+package com.gxl.example.jvm.classload.hotload;
 
 /**
  * @Author Lucky Dragon
