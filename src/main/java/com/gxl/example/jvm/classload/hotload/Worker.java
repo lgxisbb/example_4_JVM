@@ -12,6 +12,6 @@ public class Worker {
      */
     public void print() {
         System.out.println("I'm Loading in " + Worker.class.getClassLoader());
-        System.out.println(" I'm Worker instance . v1.0");
+        System.out.println(" I'm Worker instance . v1.1");
     }
 }

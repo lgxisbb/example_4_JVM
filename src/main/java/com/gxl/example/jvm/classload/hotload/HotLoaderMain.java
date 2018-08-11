@@ -18,8 +18,12 @@ public class HotLoaderMain {
     private long lastTime;
     private String classPath = "com.gxl.example.jvm.classload.hotload.Worker";
 
-    public static void main(String[] args) {
-        new HotLoaderMain().exec();
+    public static void main(String[] args) throws InterruptedException {
+        HotLoaderMain loaderMain = new HotLoaderMain();
+        while (true) {
+            loaderMain.exec();
+            Thread.sleep(1000L);
+        }
     }
 
     public void exec() {
@@ -51,6 +55,11 @@ public class HotLoaderMain {
     }
 
 
+    /**
+     * @param className
+     * @return
+     * @throws IOException
+     */
     public static byte[] getClassByteCode(String className) throws IOException {
 
         URL resource = ClassLoader.getSystemResource(className);
@@ -67,7 +76,11 @@ public class HotLoaderMain {
     }
 
 
+    /**
+     * 重新加载类
+     */
     public void reload() {
+
         URL resource = ClassLoader.getSystemResource("");
         cl = new MyClassLoader(new URL[]{resource});
         try {
