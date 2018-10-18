@@ -38,7 +38,7 @@ loadClass回调该方法，自定义ClassLoader的推荐做法
 protected final Class<?> findLoadedClass(String name) 
 寻找已经加载的类
 ```
-###类加载器的工作模式
+### 类加载器的工作模式
 * 自下而上的寻找Class
 * 自上而下的加载Class
 ![](ClassLoaderWokerPattern.jpeg)
